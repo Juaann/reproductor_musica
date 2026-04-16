@@ -1,0 +1,63 @@
+body {
+    background-color: #090909;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+    color: #1DB954; /* Verde Spotify */
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #181818;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 15px;
+    transition: background 1.3s ease;
+    border: 1px solid #282828;
+}
+
+.card:hover {
+    background: #282828;
+}
+
+.img-container img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+
+.info h3 {
+    font-size: 1.1rem;
+    margin: 15px 0 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.info p {
+    color: #b3b3b3;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+audio {
+    width: 100%;
+    filter: invert(100%) hue-rotate(90deg) brightness(1.5);
+    height: 35px;
+}
