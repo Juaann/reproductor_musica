@@ -21,6 +21,43 @@ h1 {
     margin: 0 auto;
 }
 
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+#input-artista {
+    padding: 12px 20px;
+    border-radius: 25px;
+    border-style: solid;
+    width: 300px;
+    background-color: #282828;
+    color: white;
+    font-size: 1rem;
+}
+
+#btn-buscar {
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+    background-color: #1DB954; /* Verde Spotify */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#input-artista:hover{
+    transform:scale(1.01);
+}
+
+#btn-buscar:hover {
+    background-color: #1ed760;
+    transform: scale(1.05);
+}
+
 .card {
     background: #181818;
     border-radius: 12px;
